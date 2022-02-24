@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-:root{
-    --primary-font: "Lato", sans-serif;
+:root {
+  --primary-font: "Lato", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -43,28 +43,40 @@ nav ul a {
   font-size: 1.5rem;
   padding-top: 0.25rem;
 }
-main{
+main {
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-main ul{
-    display: flex;
-    padding: 1rem;
-    list-style: none;
+section {
+  display: flex;
+  width: 100%;
 }
-main ul a{
-    text-decoration: none;
+main ul {
+  display: flex;
+  padding: 1rem;
+  list-style: none;
 }
-main ul li+li:before {
-    padding: 0.5rem;
-    color: black;
-    content: "/\00a0";
+main ul a {
+  text-decoration: none;
+}
+main ul li + li:before {
+  padding: 0.5rem;
+  color: black;
+  content: "/\00a0";
+}
+.blog {
+  /*blog post container*/
+  display: flex;
+  width: 70%;
+  height: 10rem;
+  border: 1px solid #000;
+  margin: 1rem auto;
 }
 footer {
   display: flex;
   width: 100%;
   border: 1px solid #000;
-  position: absolute;
-  bottom: 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -85,4 +97,9 @@ footer p {
     justify-content: space-evenly;
     align-items: center;
   }
-}
+  main{
+      
+  }
+  .blog{
+      width: 40vw%;
+  }
