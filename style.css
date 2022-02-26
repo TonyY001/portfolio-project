@@ -34,9 +34,10 @@ nav {
   padding: 1rem;
   justify-content: center;
   align-items: center;
-}
-nav {
   border: 1px solid #000;
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 nav ul {
   list-style: none;
@@ -60,6 +61,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+  
     }
 
 /*Breadcrumbs*/
@@ -85,19 +87,24 @@ main ul li + li:before {
 }
 .blog-post { /*Article containing blog posts*/
   display: flex;
+  flex-direction: row;
   width: 70%;
   height: 10rem;
   border: 1px solid #000;
   margin: 1rem;
 }
+.blog-image{
+  width: 5rem;
+  width: 5rem;
+  border: 1px solid black;
+}
 
 /*About Me Page*/
 #about-me-content{ /*Article containing about me content*/
   width: 80%;
-  height: 20rem;
+  height: 19rem;
   border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 #about-me-img{/*Container for image in article*/
   width: 40%;
@@ -113,9 +120,13 @@ main ul li + li:before {
 footer {
   display: flex;
   width: 100%;
+  position: fixed;
+  bottom: 0;
   border: 1px solid #000;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
+  background: #fff;
 }
 footer img { /*Container for github icon*/
   width: 5rem;
