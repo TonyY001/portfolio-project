@@ -8,6 +8,8 @@
   margin: 0;
   padding: 0;
 }
+
+/*Header -  All Pages*/
 header {
   display: flex;
   align-items: center;
@@ -24,6 +26,8 @@ header img {
   border-radius: 50%;
   margin: 1rem;
 }
+
+/*Navigation Bar - All Pages*/
 nav {
   width: 100%;
   display: flex;
@@ -42,30 +46,23 @@ nav ul a {
   font-family: var(--primary-font);
   font-size: 1.5rem;
   padding-top: 0.25rem;
+  color: #000;
 }
+nav ul a:hover{
+  color: #ff0000;
+}
+nav ul a:visted{
+  color: #ffff00;
+}
+
+/*Main Content Area - All Pages*/
 main {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    
-}
-section {
-  display: flex;
-  width: 100%;
-}
-#blog{
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-}
-.blog-post {
-  /*blog post container*/
-  display: flex;
-  width: 70%;
-  height: 10rem;
-  border: 1px solid #000;
-  margin: 1rem;
-}
+    }
+
+/*Breadcrumbs*/
 main ul {
   display: flex;
   padding: 1rem;
@@ -79,61 +76,76 @@ main ul li + li:before {
   color: black;
   content: "/\00a0";
 }
-#about-me-content{
 
+/*Blog Page*/
+#blog{ /*section containing blog articles*/
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.blog-post { /*Article containing blog posts*/
+  display: flex;
+  width: 70%;
+  height: 10rem;
+  border: 1px solid #000;
+  margin: 1rem;
+}
+
+/*About Me Page*/
+#about-me-content{ /*Article containing about me content*/
   width: 80%;
   height: 20rem;
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
 }
-#about-me-img{
+#about-me-img{/*Container for image in article*/
   width: 40%;
   height: 40%;
   border: 1px solid #000;
   margin: 1rem;
   float: left;
 }
-#about-me-txt{
+#about-me-txt{ /*Paragraph containing about me text*/
   padding: 1rem;
 }
+/*Footer - All Pages*/
 footer {
   display: flex;
   width: 100%;
   border: 1px solid #000;
   align-items: center;
   justify-content: space-between;
-
 }
-footer img {
+footer img { /*Container for github icon*/
   width: 5rem;
   margin: 2rem;
   border: 1px solid #000;
 }
-footer p {
+footer p { /*Copyright text*/
   font-family: var(--primary-font);
   margin: 2rem;
 }
 
 @media only screen and (min-width: 500px) {
-  nav ul {
+  
+  nav ul { /*Makes navabar display horizontally*/
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
   }
-  main{
+  /*main{
     display: flex;
     width: 100%;  
-  }
-  #blog{
+  }*/
+  #blog{ /*Makes blogposts display horizontally*/
     flex-direction: row;
   }
   .blog-post{
-    
+
   }
-  #about-me-img{
+  #about-me-img{ /*changes width and height of about me image*/
     width: 30%;
     height: 90%;
   }
