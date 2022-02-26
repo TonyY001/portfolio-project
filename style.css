@@ -45,12 +45,26 @@ nav ul a {
 }
 main {
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
     width: 100%;
+    
 }
 section {
   display: flex;
   width: 100%;
+}
+#blog{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.blog-post {
+  /*blog post container*/
+  display: flex;
+  width: 70%;
+  height: 10rem;
+  border: 1px solid #000;
+  margin: 1rem;
 }
 main ul {
   display: flex;
@@ -65,13 +79,24 @@ main ul li + li:before {
   color: black;
   content: "/\00a0";
 }
-.blog {
-  /*blog post container*/
-  display: flex;
-  width: 70%;
-  height: 10rem;
+#about-me-content{
+
+  width: 80%;
+  height: 20rem;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+#about-me-img{
+  width: 40%;
+  height: 40%;
   border: 1px solid #000;
-  margin: 1rem auto;
+  margin: 1rem;
+  float: left;
+}
+#about-me-txt{
+  padding: 1rem;
 }
 footer {
   display: flex;
@@ -79,6 +104,7 @@ footer {
   border: 1px solid #000;
   align-items: center;
   justify-content: space-between;
+
 }
 footer img {
   width: 5rem;
@@ -98,8 +124,16 @@ footer p {
     align-items: center;
   }
   main{
-      
+    display: flex;
+    width: 100%;  
   }
-  .blog{
-      width: 40vw%;
+  #blog{
+    flex-direction: row;
+  }
+  .blog-post{
+    
+  }
+  #about-me-img{
+    width: 30%;
+    height: 90%;
   }
