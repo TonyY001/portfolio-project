@@ -87,7 +87,7 @@ main ul li + li:before {
   display: flex;
   flex-direction:column;
   align-items: center;
-}
+} 
 .blog-container-styling{ /*div to separate blog posts 2x2)*/
   display: flex;
   width:100%;
@@ -95,10 +95,10 @@ main ul li + li:before {
   align-items: center;
 }
 .blog-post { /*Article containing blog posts*/
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 5rem;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  width: 70%;
+  height: 20rem;
   border: 1px solid #000;
   margin: 1rem;
 }
@@ -158,11 +158,11 @@ footer p { /*Copyright text*/
     width: 100%;  
   }*/
   #blog{ /*Makes blogposts display horizontally*/
-    flex-direction: row ;
+    flex-direction:  ;
 
   }
  .blog-post{
-    width: 60%;
+    width: 70%;
     height: 20rem;
     margin-bottom: 1rem;
 
@@ -172,8 +172,20 @@ footer p { /*Copyright text*/
     height: 90%;
   }
 
+  @media only screen and (min-width: 700px){
+  #about-me-content{
+    height: 30rem;
+  }
+  }
+
 @media only screen and (min-width: 900px){
   .blog-container-styling{
     flex-direction: row;
+  }
+  .blog-post{
+    width: 40%;
+    height: 30rem;
+    margin: 1rem auto;
+
   }
 }
