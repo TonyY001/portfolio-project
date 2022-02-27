@@ -63,8 +63,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-  
-    }
+  }
 
 /*Breadcrumbs*/
 main ul {
@@ -117,7 +116,6 @@ main ul li + li:before {
   padding: 1rem;
 }
 
-
 /*About Me Page*/
 #about-me-content{ /*Article containing about me content*/
   width: 80%;
@@ -138,15 +136,46 @@ main ul li + li:before {
 
 /*Contact Page*/
 #contact-page-main-area{ /*section containing form and address block*/
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*align-items: center;*/ /*centers address and form in section*/
 
+}
+.top-bottom-split{ /*div holding top content and bottom content*/
+  width: 100%;
+  flex-direction: row;
+  border: 1px solid #000;
+}
+
+#contact-details-sidetxt{
+  width: 40%;
+  float: right;
+  border: 1px solid #000;
+}
+}
+#contact-details{ /*article containing contact details*/
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 1rem;
+  float:right;
+  
 
 }
-#contact-details{
-
-}
-
 /*Footer - All Pages*/
 footer {
   display: flex;
