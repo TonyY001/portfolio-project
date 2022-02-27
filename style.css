@@ -95,17 +95,28 @@ main ul li + li:before {
   align-items: center;
 }
 .blog-post { /*Article containing blog posts*/
-  /*display: flex;*/
-  /*flex-direction: row;*/
+  display: flex;
+  flex-direction: column;
   width: 70%;
-  height: 20rem;
   border: 1px solid #000;
   margin: 1rem;
 }
-.blog-image{
-  width: 5rem;
-  width: 5rem;
-  border: 1px solid black;
+.blog-heading{ /*title of each blog post*/
+  text-align: center;
+  padding: 1rem;
+}
+.blog-date-and-time{ /*date and time of blog post - above image*/
+  padding: 1rem;
+}
+.blog-post-image{
+  width: 50%;
+  height: 10rem;
+  border: solid 1px #000;
+  margin: 0 auto;
+}
+.blog-post-content{
+  padding: 1rem;
+}
 }
 
 /*About Me Page*/
