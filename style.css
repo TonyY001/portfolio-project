@@ -127,7 +127,7 @@ main ul li + li:before {
 }
 #about-me-img{/*Container for image in article*/
   width: 40%;
-  height: 90%;
+  height: 40%;
   border: 1px solid #000;
   margin: 1rem;
   float: left;
@@ -135,6 +135,18 @@ main ul li + li:before {
 #about-me-txt{ /*Paragraph containing about me text*/
   padding: 1rem;
 }
+
+/*Contact Page*/
+#contact-page-main-area{ /*section containing form and address block*/
+
+}
+form{
+
+}
+#contact-details{
+
+}
+
 /*Footer - All Pages*/
 footer {
   display: flex;
@@ -178,7 +190,6 @@ footer p { /*Copyright text*/
 
   }
   #about-me-img{ /*changes width and height of about me image*/
-    width: 30%;
     height: 90%;
   }
 
