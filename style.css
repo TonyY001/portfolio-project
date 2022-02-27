@@ -58,7 +58,6 @@ nav ul a:hover{
 nav ul a:visted{
   color: #ffff00;
 }
-
 /*Main Content Area - All Pages*/
 main {
     display: flex;
@@ -117,7 +116,7 @@ main ul li + li:before {
 .blog-post-content{
   padding: 1rem;
 }
-}
+
 
 /*About Me Page*/
 #about-me-content{ /*Article containing about me content*/
