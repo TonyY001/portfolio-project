@@ -24,7 +24,7 @@ header p {
 }
 header img {
   width: 100px;
-  height: 100px;
+  height: 123px;
   border: 1px solid #000;
   border-radius: 50%;
   margin: 1rem;
@@ -65,10 +65,13 @@ main {
     width: 100%;
   }
 
-  #homepage{ /*main content area for homepage*/
+  #homepage{ main content area for homepage
     width: 100%;
-    height: 20rem;
-    background-image: url("images/background.jpg");
+    }
+  main img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom:auto;
   }
 
 /*Breadcrumbs*/
