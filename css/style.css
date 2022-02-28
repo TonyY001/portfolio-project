@@ -155,6 +155,9 @@ main ul li + li:before {
 }
 
 /*Contact Page*/
+#contact-main-heading{
+  font-size: 3rem;
+}
 #contact-page-main-area{ /*section containing form and address block*/
   display: flex;
   flex-direction: column;
