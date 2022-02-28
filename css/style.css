@@ -25,13 +25,6 @@ header p {
   font-size: 2.5rem;
   color: #fff;
 }
-header img {
-  width: 100px;
-  height: 123px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  margin: 1rem;
-}
 
 /*Navigation Bar - All Pages*/
 nav {
@@ -92,6 +85,10 @@ main ul {
 }
 main ul a {
   text-decoration: none;
+  font-family: var(--primary-font);
+}
+main ul li{
+   font-family: var(--primary-font);
 }
 main ul li + li:before {
   padding: 0.5rem;
@@ -114,21 +111,24 @@ main ul li + li:before {
 .blog-post { /*Article containing blog posts*/
   display: flex;
   flex-direction: column;
-  width: 70%;
   border: 1px solid #000;
+  width: 70%;
   margin: 1rem;
 }
 .blog-heading{ /*title of each blog post*/
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
 .blog-date-and-time{ /*date and time of blog post - above image*/
+  font-family: var(--primary-font);
+  color: #616161;
+  font-style: italic;
   padding: 1rem;
 }
 .blog-post-image{
   width: 50%;
-  height: 10rem;
-  border: solid 1px #000;
   margin: 0 auto;
 }
 .blog-post-content{
@@ -138,10 +138,9 @@ main ul li + li:before {
 /*About Me Page*/
 #about-me-content{ /*Article containing about me content*/
   width: 80%;
-  /*height: 19rem;*/
-  border: 1px solid black;
   margin:  0 auto;
 }
+
 #about-me-img{/*Container for image in article*/
   width: 40%;
   /*height: 40%;*/
@@ -150,6 +149,9 @@ main ul li + li:before {
   float: left;
 }
 #about-me-txt{ /*Paragraph containing about me text*/
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  font-size: 1.25rem;
   padding: 1rem;
 }
 
@@ -197,9 +199,8 @@ form{
   border-right: 4px solid #000;
   padding: 1rem;
   float:right;
-  
+  }
 
-}
 /*Footer - All Pages*/
 footer {
   display: flex;
@@ -258,7 +259,6 @@ footer p { /*Copyright text*/
   }
   .blog-post{
     width: 40%;
-    height: 30rem;
     margin: 1rem auto;
 
   }
