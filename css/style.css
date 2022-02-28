@@ -138,12 +138,11 @@ main ul li + li:before {
 /*About Me Page*/
 #about-me-content{ /*Article containing about me content*/
   width: 80%;
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
 #about-me-img{/*Container for image in article*/
   width: 40%;
-  /*height: 40%;*/
   border: 1px solid #000;
   margin: 1rem;
   float: left;
@@ -160,46 +159,45 @@ main ul li + li:before {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*align-items: center;*/ /*centers address and form in section*/
-
 }
-.top-bottom-split{ /*div holding top content and bottom content*/
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.contact-page-article{
+  width: 80%;
+  height: 20rem;
+  margin: 1rem auto;
 }
-
-#contact-details-sidetxt{
-  width: 40%;
-  /*border: 1px solid #000;*/
-}
-#form-details-sidetxt{
- width: 40%;
- /*border: 1px solid #000;*/
-}
-#contact-details{ /*article containing contact details*/
+#contact-block{
   display: flex;
   flex-direction: column;
-  width: 40%;
   align-items: center;
+  justify-content: space-evenly;
   border-top: 4px solid #000;
   border-left: 4px solid #000;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  margin-left: 1rem;
 }
-form{
+#contact-block h3{
+  font-family: var(--primary-font);
+  font-size: 1.75rem;
+  text-align: center;
+}
+#contact-block p{
+  font-size: 1.5rem;
+  color: #282ec0;
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+}
+#txt-block{
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #93778b;
   border-bottom: 4px solid #000;
   border-right: 4px solid #000;
-  padding: 1rem;
-  float:right;
-  }
+}
+#txt-block h2{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 4rem;
+  color: #fff;
+  padding: 2rem;
+}
 
 /*Footer - All Pages*/
 footer {
@@ -230,27 +228,19 @@ footer p { /*Copyright text*/
     justify-content: space-evenly;
     align-items: center;
   }
-  /*main{
-    display: flex;
-    width: 100%;  
-  }*/
-  #blog{ /*Makes blogposts display horizontally*/
-    flex-direction:  ;
-
-  }
- .blog-post{
+  .blog-post{
     width: 60%;
     margin-bottom: 1rem;
-
+}
+  
+@media only screen and (min-width: 700px){
+  #contact-page-main-area{
+    flex-direction: row;
   }
-  #about-me-img{ /*changes width and height of about me image*/
-   /* height: 90%;*/
-  }
-
-  @media only screen and (min-width: 700px){
-  #about-me-content{
-    /*height: 30rem;*/
-  }
+  .contact-page-article{
+    width: 40%;
+    height: 30rem;
+    }
   }
 
 @media only screen and (min-width: 900px){
@@ -260,6 +250,11 @@ footer p { /*Copyright text*/
   .blog-post{
     width: 40%;
     margin: 1rem auto;
-
-  }
+}
+#contact-block h3{
+  font-size: 2.25rem;
+}
+#contact-block p{
+  font-size: 2rem;
+}
 }
