@@ -211,6 +211,8 @@ footer {
   justify-content: space-between;
   margin-top: 1rem;
   background: #282ec0;
+  position: fixed;
+  bottom: 0;
 }
 footer img { /*Container for github icon*/
   width: 5rem;
