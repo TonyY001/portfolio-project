@@ -128,8 +128,10 @@ main ul li + li:before {
   padding: 1rem;
 }
 .blog-post-image{
-  width: 50%;
+  width: auto;
+  height: auto;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 .blog-post-content{
   padding: 1rem;
