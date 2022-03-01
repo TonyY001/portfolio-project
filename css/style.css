@@ -125,12 +125,13 @@ main ul li + li:before {
   padding: 1rem;
 }
 .blog-post-image{
-  width: auto;
-  height: auto;
+  width: 50%;
   margin: 0 auto;
   border: 1px solid #000;
 }
 .blog-post-content{
+  font-family: var(--secondary-font);
+  line-height: 1.5;
   padding: 1rem;
 }
 
