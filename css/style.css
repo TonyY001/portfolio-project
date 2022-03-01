@@ -1,16 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap');
 :root {
-  --primary-font: "Lato", sans-serif;
+  --primary-font: 'Architects Daughter', cursive;
+  --secondary-font: "Lato", sans-serif;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-body{
-  overflow: scroll;
 }
 
 /*Header -  All Pages*/
@@ -21,7 +18,7 @@ header {
 }
 header p {
   padding: 1rem;
-  font-family: 'Architects Daughter', cursive;
+  font-family: var(--primary-font);
   font-size: 2.5rem;
   color: #fff;
 }
@@ -43,7 +40,7 @@ nav ul {
 }
 nav ul a {
   text-decoration: none;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 1.5rem;
   padding-top: 0.25rem;
   color: #fff;
@@ -68,7 +65,7 @@ main {
   main h1{
     padding: 2rem;
     text-align: center;
-    font-family: 'Architects Daughter', cursive;
+    font-family: var(--primary-font);
     font-size: 2.25rem;
   }
   main img{
@@ -85,10 +82,10 @@ main ul {
 }
 main ul a {
   text-decoration: none;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
 }
 main ul li{
-   font-family: var(--primary-font);
+   font-family: var(--secondary-font);
 }
 main ul li + li:before {
   padding: 0.5rem;
@@ -116,13 +113,13 @@ main ul li + li:before {
   margin: 1rem;
 }
 .blog-heading{ /*title of each blog post*/
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
 .blog-date-and-time{ /*date and time of blog post - above image*/
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: #616161;
   font-style: italic;
   padding: 1rem;
@@ -150,7 +147,7 @@ main ul li + li:before {
   float: left;
 }
 #about-me-txt{ /*Paragraph containing about me text*/
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   line-height: 1.5;
   font-size: 1.25rem;
   padding: 1rem;
@@ -179,14 +176,14 @@ main ul li + li:before {
   border-left: 4px solid #000;
 }
 #contact-block h3{
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 1.75rem;
   text-align: center;
 }
 #contact-block p{
   font-size: 1.5rem;
   color: #282ec0;
-  font-family: 'Architects Daughter', cursive;
+  font-family: var(--primary-font);
   text-align: center;
 }
 #txt-block{
@@ -198,7 +195,7 @@ main ul li + li:before {
   border-right: 4px solid #000;
 }
 #txt-block h2{
-  font-family: 'Architects Daughter', cursive;
+  font-family: var(--primary-font);
   font-size: 4rem;
   color: #fff;
   padding: 2rem;
@@ -213,8 +210,6 @@ footer {
   justify-content: space-between;
   margin-top: 1rem;
   background: #282ec0;
-  position: fixed;
-  bottom: 0;
 }
 footer img { /*Container for github icon*/
   width: 5rem;
@@ -222,7 +217,7 @@ footer img { /*Container for github icon*/
   border: 1px solid #000;
 }
 footer p { /*Copyright text*/
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   margin: 2rem;
   color: #fff;
 }
