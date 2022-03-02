@@ -103,8 +103,10 @@ main ul li + li:before {
   /*section containing blog articles*/
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
   justify-content: space-evenly;
+}
+#blog-page-heading {
+  width: 100%; /*prevents page heading from aligning with blog posts when flex direction changes to row*/
 }
 .blog-post {
   /*Article containing blog posts*/
@@ -253,7 +255,7 @@ footer p {
   #contact-page-main-area {
     flex-direction: row;
   }
-  .contact-page-article {
+ .contact-page-article {
     width: 40%;
     height: 30rem;
   }
