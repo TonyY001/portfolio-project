@@ -131,9 +131,9 @@ main ul li + li:before {
   padding: 1rem;
 }
 .blog-post-image {
-  width: 50%;
+  width: 10rem;
+  height: 10rem;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 .blog-post-content {
   font-family: var(--secondary-font);
@@ -227,8 +227,12 @@ footer {
 footer img {
   /*Container for github icon*/
   width: 5rem;
+  height: 5rem;
   margin: 2rem;
-  border: 1px solid #000;
+  background: #fff;
+  padding: 0.5rem;
+  border: 2px solid #000;
+  border-radius: 25%;
 }
 footer p {
   /*Copyright text*/
@@ -255,7 +259,7 @@ footer p {
   #contact-page-main-area {
     flex-direction: row;
   }
- .contact-page-article {
+  .contact-page-article {
     width: 40%;
     height: 30rem;
   }
