@@ -61,22 +61,11 @@ main {
   flex-direction: column;
   width: 100%;
 }
-
-/*Home page*/
-#homepage {
-  /*main content area for homepage*/
-  width: 100%;
-}
-main h1 {
-  padding: 2rem;
+h1 {
+  padding-bottom: 1rem;
   text-align: center;
   font-family: var(--primary-font);
-  font-size: 2.25rem;
-}
-main img {
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+  font-size: 3rem;
 }
 
 /*Breadcrumbs*/
@@ -97,6 +86,18 @@ main ul li + li:before {
   color: black;
   content: "/\00a0";
 }
+
+/*Home page*/
+#homepage {
+  /*main content area for homepage*/
+  width: 100%; 
+}
+#homepage h1{
+  padding: 1rem;
+}
+#homepage img {
+  width: 100%;
+  }
 
 /*Blog Page*/
 #blog {
@@ -168,7 +169,6 @@ main ul li + li:before {
   font-size: 3rem;
 }
 #contact-page-main-area {
-  /*section containing form and address block*/
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -188,11 +188,11 @@ main ul li + li:before {
 }
 #contact-block h3 {
   font-family: var(--secondary-font);
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
 }
 #contact-block p {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   color: #282ec0;
   font-family: var(--primary-font);
   text-align: center;
@@ -204,10 +204,23 @@ main ul li + li:before {
   background: #93778b;
   border-bottom: 4px solid #000;
   border-right: 4px solid #000;
+  animation-name: colorful-background;
+  animation-duration: 10s;
+}
+@keyframes colorful-background{
+  25% {
+    background:#282ec0;
+  }
+  50% {
+    background: #93778b;
+  }
+  75% {
+    background: #282ec0;
+  }
 }
 #txt-block h2 {
   font-family: var(--primary-font);
-  font-size: 4rem;
+  font-size: 3.75rem;
   color: #fff;
   padding: 2rem;
 }
@@ -273,11 +286,11 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 950px) {
   #contact-block h3 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
   #contact-block p {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
