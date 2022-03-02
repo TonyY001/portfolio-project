@@ -9,6 +9,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  padding-bottom: 9rem; /*Parent element of footer. Fixes problem with content sitting underneath footer
+  when using position: fixed; bottom: 0, footer height set at 8rem*/
+}
 
 /*Header -  All Pages*/
 header {
@@ -38,17 +42,17 @@ nav {
 nav ul {
   list-style: none;
 }
-nav ul a {
+nav ul li a {
   text-decoration: none;
   font-family: var(--secondary-font);
   font-size: 1.5rem;
   padding-top: 0.25rem;
   color: #fff;
 }
-nav ul a:hover {
+nav ul li a:hover {
   color: #ff0000;
 }
-nav ul a:visted {
+nav ul li a:visted {
   color: #ffff00;
 }
 /*Main Content Area - All Pages*/
@@ -210,10 +214,12 @@ main ul li + li:before {
 footer {
   display: flex;
   width: 100%;
+  height: 8rem;
   border: 1px solid #000;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
+  position: fixed;
+  bottom: 0;
   background: #282ec0;
 }
 footer img {
