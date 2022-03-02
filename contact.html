@@ -13,12 +13,14 @@
   </head>
 
   <body>
+     <!--Graphical component 1-->
     <header>
       <a href="index.html">
         <img src="images/TYWD.png" alt="image of company logo"/>
       </a>
       <p>Tony Young Website Development</p>
     </header>
+    <!--Text component 1-->
     <nav>
       <ul class="navbar">
         <li class="nav_heading">
@@ -39,6 +41,7 @@
       </ul>
     </nav>
     <main>
+      <!--Text component 2-->
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -47,28 +50,31 @@
       </ul>
       <section>
         <h1>Get In Touch ...</h1>
-        <!--Extra div added to keep h1 inside section for accessibility and not take on flex properties of #contact-page-main-area-->
-        <div id ="contact-page-main-area">
-       <article class="contact-page-article" id="contact-block">
-        <div>
-          <h3>Name</h3>
-          <p>Tony Young</p>
-        </div>
-        <div>
-          <h3>E-mail</h3>
-          <p>tryoung1@outlook.com</p>
-        </div>
-        <div>
-          <h3>Working Out Of</h3>
-          <p>Brisbane, Queensland</p>
-        </div>
-       </article>
-       <article class="contact-page-article" id="txt-block">
-          <h2>I'd love<br/> to hear<br> from you =)</h2>
-       </article>
-       </div>
+        <!--Extra container added to keep h1 inside section for accessibility and not take on flex properties of #contact-page-main-area-->
+        <article id ="contact-page-main-area">
+          <!--Text component 4-->
+          <aside class="contact-page-article" id="contact-block">
+            <div>
+              <h3>Name</h3>
+              <p>Tony Young</p>
+            </div>
+            <div>
+              <h3>E-mail</h3>
+              <p>tryoung1@outlook.com</p>
+            </div>
+            <div>
+              <h3>Working Out Of</h3>
+              <p>Brisbane, Queensland</p>
+            </div>
+          </aside>
+          <!--Graphical component 4-->
+          <aside class="contact-page-article" id="txt-block">
+            <h2>I'd love<br/> to hear<br> from you =)</h2>
+          </aside>
+        </article>
       </section>
     </main>
+     <!--Text component 3-->
     <footer>
       <a href="https://github.com/TonyY001">
         <img src="images/github.svg" alt="link to github profile" />
