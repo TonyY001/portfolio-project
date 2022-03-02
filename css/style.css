@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap");
 :root {
-  --primary-font: 'Architects Daughter', cursive;
+  --primary-font: "Architects Daughter", cursive;
   --secondary-font: "Lato", sans-serif;
 }
 * {
@@ -45,34 +45,35 @@ nav ul a {
   padding-top: 0.25rem;
   color: #fff;
 }
-nav ul a:hover{
+nav ul a:hover {
   color: #ff0000;
 }
-nav ul a:visted{
+nav ul a:visted {
   color: #ffff00;
 }
 /*Main Content Area - All Pages*/
 main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  /*Home page*/
-  #homepage{ /*main content area for homepage*/
-    width: 100%;
-    }
-  main h1{
-    padding: 2rem;
-    text-align: center;
-    font-family: var(--primary-font);
-    font-size: 2.25rem;
-  }
-  main img{
-    width: 100%;
-    margin-top: auto;
-    margin-bottom:auto;
-  }
+/*Home page*/
+#homepage {
+  /*main content area for homepage*/
+  width: 100%;
+}
+main h1 {
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 2.25rem;
+}
+main img {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 /*Breadcrumbs*/
 main ul {
@@ -84,8 +85,8 @@ main ul a {
   text-decoration: none;
   font-family: var(--secondary-font);
 }
-main ul li{
-   font-family: var(--secondary-font);
+main ul li {
+  font-family: var(--secondary-font);
 }
 main ul li + li:before {
   padding: 0.5rem;
@@ -94,61 +95,62 @@ main ul li + li:before {
 }
 
 /*Blog Page*/
-#blog{ /*section containing blog articles*/
+#blog {
+  /*section containing blog articles*/
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   /*align-items: center;*/
   justify-content: space-evenly;
-} 
-/*.blog-container-styling{ div to separate blog posts 2x2)
-  display: flex;
-  width:100%;
-  flex-direction: column;
-  align-items: center;
-}*/
-.blog-post { /*Article containing blog posts*/
+}
+.blog-post {
+  /*Article containing blog posts*/
   display: flex;
   flex-direction: column;
   width: 70%;
   border: 1px solid #000;
   margin: 1rem auto;
 }
-.blog-heading{ /*title of each blog post*/
+.blog-heading {
+  /*title of each blog post*/
   font-family: var(--secondary-font);
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
-.blog-date-and-time{ /*date and time of blog post - above image*/
+.blog-date-and-time {
+  /*date and time of blog post - above image*/
   font-family: var(--secondary-font);
   color: #616161;
   font-style: italic;
   padding: 1rem;
 }
-.blog-post-image{
+.blog-post-image {
   width: 50%;
   margin: 0 auto;
   border: 1px solid #000;
 }
-.blog-post-content{
+.blog-post-content {
   font-family: var(--secondary-font);
   line-height: 1.5;
   padding: 1rem;
 }
 
 /*About Me Page*/
-#about-me-content{ /*Article containing about me content*/
+#about-me-content {
+  /*Article containing about me content*/
   width: 80%;
   margin: 0 auto;
 }
 
-#about-me-img{/*Container for image in article*/
+#about-me-img {
+  /*Container for image in article*/
   width: 40%;
   border: 1px solid #000;
   margin: 1rem;
   float: left;
 }
-#about-me-txt{ /*Paragraph containing about me text*/
+#about-me-txt {
+  /*Paragraph containing about me text*/
   font-family: var(--secondary-font);
   line-height: 1.5;
   font-size: 1.25rem;
@@ -156,20 +158,21 @@ main ul li + li:before {
 }
 
 /*Contact Page*/
-#contact-main-heading{
+#contact-main-heading {
   font-size: 3rem;
 }
-#contact-page-main-area{ /*section containing form and address block*/
+#contact-page-main-area {
+  /*section containing form and address block*/
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.contact-page-article{
+.contact-page-article {
   width: 80%;
   height: 20rem;
   margin: 1rem auto;
 }
-#contact-block{
+#contact-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,18 +180,18 @@ main ul li + li:before {
   border-top: 4px solid #000;
   border-left: 4px solid #000;
 }
-#contact-block h3{
+#contact-block h3 {
   font-family: var(--secondary-font);
   font-size: 1.75rem;
   text-align: center;
 }
-#contact-block p{
+#contact-block p {
   font-size: 1.5rem;
   color: #282ec0;
   font-family: var(--primary-font);
   text-align: center;
 }
-#txt-block{
+#txt-block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,7 +199,7 @@ main ul li + li:before {
   border-bottom: 4px solid #000;
   border-right: 4px solid #000;
 }
-#txt-block h2{
+#txt-block h2 {
   font-family: var(--primary-font);
   font-size: 4rem;
   color: #fff;
@@ -213,60 +216,56 @@ footer {
   margin-top: 1rem;
   background: #282ec0;
 }
-footer img { /*Container for github icon*/
+footer img {
+  /*Container for github icon*/
   width: 5rem;
   margin: 2rem;
   border: 1px solid #000;
 }
-footer p { /*Copyright text*/
+footer p {
+  /*Copyright text*/
   font-family: var(--secondary-font);
   margin: 2rem;
   color: #fff;
 }
 
 @media only screen and (min-width: 500px) {
-  
-  nav ul { /*Makes navabar display horizontally*/
+  nav ul {
+    /*Makes navabar display horizontally*/
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
   }
-  .blog-post{
+  .blog-post {
     width: 70%;
     margin-bottom: 1rem;
+  }
 }
-  
-@media only screen and (min-width: 700px){
-  #contact-page-main-area{
+
+@media only screen and (min-width: 700px) {
+  #contact-page-main-area {
     flex-direction: row;
   }
-  .contact-page-article{
+  .contact-page-article {
     width: 40%;
     height: 30rem;
-    }
-  #blog{
+  }
+  #blog {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .blog-post{
+  .blog-post {
     width: 40%;
     margin-bottom: 1rem;
-}
   }
+}
 
-@media only screen and (min-width: 900px){
-  .blog-container-styling{
-    flex-direction: row;
+@media only screen and (min-width: 900px) {
+  #contact-block h3 {
+    font-size: 2.25rem;
   }
-  /*.blog-post{
-    width: 40%;
-    margin: 1rem auto;*/
-}
-#contact-block h3{
-  font-size: 2.25rem;
-}
-#contact-block p{
-  font-size: 2rem;
-}
+  #contact-block p {
+    font-size: 2rem;
+  }
 }
