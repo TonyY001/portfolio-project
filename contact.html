@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | TY Web Development</title>
     <meta name="author" content="Tony Young" />
-    <meta name="description" content="Professional Portfolio of Tony Young Web Developer" />
-    <meta name="keywords" content="Front-End Web Development, Back-End Web Development, Full-Stack Web Development" />
+    <meta
+      name="description"
+      content="Professional Portfolio of Tony Young Web Developer"
+    />
+    <meta
+      name="keywords"
+      content="Front-End Web Development, Back-End Web Development, Full-Stack Web Development"
+    />
     <meta name="robots" content="all" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-     <!--Graphical component 1-->
+    <!--Graphical component 1-->
     <header>
       <a href="index.html">
-        <img src="images/logo.svg" alt="image of company logo"/>
+        <img src="images/logo.svg" alt="image of company logo" />
       </a>
       <p>Tony Young Website Development</p>
     </header>
@@ -48,33 +54,34 @@
         </li>
         <li>Contact</li>
       </ul>
-      <section>
-        <h1>Get In Touch ...</h1>
-        <!--Extra container added to keep h1 inside section for accessibility and not take on flex properties of #contact-page-main-area-->
-        <article id ="contact-page-main-area">
-          <!--Text component 4-->
-          <aside class="contact-page-article" id="contact-block">
-            <div>
-              <h3>Name</h3>
-              <p>Tony Young</p>
-            </div>
-            <div>
-              <h3>E-mail</h3>
-              <p>tryoung1@outlook.com</p>
-            </div>
-            <div>
-              <h3>Working Out Of</h3>
-              <p>Brisbane, Queensland</p>
-            </div>
+      <h1 id="contact-main-heading">Connect With Me</h1>
+      <section id="contact-main-section">
+        <article id="contact-main-article">
+          <aside id="contact-details">
+            <h2>Reach Out</h2>
+            <h3>Name</h3>
+            <p>Tony Young</p>
+            <h3>Working Out Of</h3>
+            <p>Brisbane, Queensland</p>
+            <h3>Email</h3>
+            <p>tryoung1@outlook.com</p>
           </aside>
-          <!--Graphical component 4-->
-          <aside class="contact-page-article" id="txt-block">
-            <h2>I'd love<br/> to hear<br> from you =)</h2>
+          <aside id="contact-form">
+            <h2 id="form-sub-heading">Send A Message</h2>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="5" cols="20"></textarea>
+              <input id="button" type="submit" value="SEND" />
+            </form>
           </aside>
         </article>
       </section>
     </main>
-     <!--Text component 3-->
+    <!--Text component 3-->
     <footer>
       <a href="https://github.com/TonyY001">
         <img src="images/github.svg" alt="link to github profile" />
