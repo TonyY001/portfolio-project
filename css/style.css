@@ -1,12 +1,15 @@
+/*Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+/*Themed fonts and background colors*/
 :root {
   --primary-font: "Architects Daughter", cursive;
   --secondary-font: "Lato", sans-serif;
   --primary-blue: #282ec0;
   --primary-grey: #93778b;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +25,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  background: #93778b;
+  background: var(--primary-grey);
 }
 header img {
   width: 80px;
@@ -51,7 +54,7 @@ nav {
   border: 1px solid #000;
   position: sticky;
   top: 0;
-  background: #282ec0;
+  background: var(--primary-blue);
 }
 nav ul {
   list-style: none;
@@ -213,7 +216,7 @@ main ul li + li:before {
 }
 #contact-details {
   border: solid 1px black;
-  background: #93778b;
+  background: var(--primary-grey);
   width: 100%;
   height: 45%;
   animation-name: background-color-change;
@@ -224,13 +227,13 @@ main ul li + li:before {
     background: #db7093; 
   }
   50%{
-    background: #93778b;
+    background: var(--primary-grey);
   }
   75%{
     background: #db7093;
   }
   100%{
-    background: #93778b;
+    background: var(--primary-grey);
   }
 }
 #contact-form {
@@ -292,7 +295,7 @@ form{
     font-family: var(--secondary-font);
     font-size: 1.25rem;
     color: #fff;
-    background: #282ec0;
+    background: var(--primary-blue);
     border: 3px solid #000;
     border-radius: 10%;
   }
@@ -308,7 +311,7 @@ footer {
   justify-content: space-evenly;
   position: fixed;
   bottom: 0;
-  background: #282ec0;
+  background: var(--primary-blue);
 }
 footer img {
   /*Container for github icon*/
@@ -386,11 +389,3 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 950px) {
-  #contact-block h3 {
-    font-size: 2.5rem;
-  }
-  #contact-block p {
-    font-size: 2.25rem;
-  }
-}
