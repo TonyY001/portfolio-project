@@ -58,24 +58,25 @@
       <section id="contact-main-section">
         <article id="contact-main-article">
           <aside id="contact-details">
-            <h2 id="contact-sub-heading">Reach Out</h2>
-            <div id="contact-details-inner-container">
-              <div class="contact-details-grouping">
-                <h3>Name</h3>
-                <p>Tony Young</p>
-              </div>
-              <div class="contact-details-grouping">
-                <h3>Working Out Of</h3>
-                <p>Brisbane, Queensland</p>
-              </div>
-              <div class="contact-details-grouping">
-                <h3>Email</h3>
-                <p>tryoung1@outlook.com</p>
-              </div>
-            </div>
+            <h2>Reach Out</h2>
+            <h3>Name</h3>
+            <p>Tony Young</p>
+            <h3>Working Out Of</h3>
+            <p>Brisbane, Queensland</p>
+            <h3>Email</h3>
+            <p>tryoung1@outlook.com</p>
           </aside>
           <aside id="contact-form">
-            <h2 id="contact-sub-heading">Submit A Request</h2>
+            <h2 id="form-sub-heading">Submit A Request</h2>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Message</label>
+              <textarea name="message" rows="5" cols="20"></textarea>
+              <input id="button" type="submit" value="SEND" />
+            </form>
           </aside>
         </article>
       </section>
