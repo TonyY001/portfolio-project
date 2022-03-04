@@ -21,7 +21,7 @@ body {
 }
 
 /*Header -  All Pages*/
-/*Graphical component 2*/
+/*Text component styling*/
 header {
   display: flex;
   align-items: center;
@@ -44,8 +44,8 @@ header p {
 }
 
 /*Navigation Bar - All Pages*/
-/*Text component 1*/
-nav {
+/*Text component styling*/
+#navigation {
   width: 100%;
   display: flex;
   padding: 1rem;
@@ -56,16 +56,16 @@ nav {
   top: 0;
   background: var(--primary-blue);
 }
-nav ul {
+#navigation ul {
   list-style: none;
 }
-nav ul li a {
+#navigation ul li a {
   text-decoration: none;
   font-family: var(--primary-font);
   font-size: 1.5rem;
   color: #fff;
 }
-nav ul li a:hover {
+#navigation ul li a:hover {
   color: #ff0000;
 }
 
@@ -86,31 +86,33 @@ h1 {
 }
 
 /*Breadcrumbs*/
-/*Text component 2*/
-main ul {
+/*Text component styling*/
+#breadcrumbs ul {
   display: flex;
   padding: 1rem;
   list-style: none;
+  justify-content: left;
 }
-main ul a {
+#breadcrumbs ul a {
   text-decoration: none;
   font-family: var(--secondary-font);
 }
-main ul li {
+#breadcrumbs ul li {
   font-family: var(--secondary-font);
 }
-main ul li + li:before {
+#breadcrumbs ul li + li:before {
   padding: 0.5rem;
   color: black;
   content: "/\00a0";
 }
 
 /*Home page*/
+/*Graphical component styling*/
 #homepage {
   width: 100%;
   height: 40vh;
 }
-#homepage div {
+#homepage article {
   width: 95%;
   height: 95%;
   margin: auto;
@@ -122,8 +124,8 @@ main ul li + li:before {
 }
 
 /*Blog Page*/
-#blog {
-  /*section containing blog articles*/
+/*Graphical component styling*/
+#blog { /*section containing blog articles*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -131,29 +133,25 @@ main ul li + li:before {
 #blog-page-heading {
   width: 100%; /*prevents page heading from aligning with blog posts when flex direction changes to row*/
 }
-.blog-post {
-  /*Article containing blog posts*/
+.blog-post {  /*Article containing blog posts*/
   display: flex;
   flex-direction: column;
   width: 70%;
   border: 1px solid rgb(147,119,139,0.5);
   margin: 1rem auto;
 }
-.blog-heading {
-  /*title of each blog post*/
+.blog-heading { /*title of each blog post*/
   font-family: var(--secondary-font);
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
-.blog-date-and-time {
-  /*date and time of blog post - above image*/
+.blog-date-and-time { /*date and time of blog post - above image*/
   font-family: var(--secondary-font);
   color: #616161;
   font-style: italic;
   padding: 1rem;
 }
-/*Graphical component 3*/
 .blog-post-image {
   width: 10rem;
   height: 10rem;
@@ -166,22 +164,12 @@ main ul li + li:before {
 }
 
 /*About Me Page*/
-#about-me-img {
-  /*Container for image in article*/
-  width: 90%;
-  border: 2px solid #000;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  float: left;
-}
-#about-me-content {
-  /*Article containing about me content*/
+/*Graphical component styling*/
+#about-me-content {   /*Article containing about-me content*/
   width: 80%;
   margin: 1rem auto;
 }
-/*Graphical component 2*/
-#about-me-img {
-  /*Container for image in article*/
+#about-me-img { /*Container for image in article*/
   width: 40%;
   border: 2px solid #000;
   margin-right: 2rem;
@@ -192,13 +180,13 @@ main ul li + li:before {
   transform: scale(1.15, 1.15);
   transition: 1.5s;
 }
-#about-me-txt {
-  /*Paragraph containing about me text*/
+#about-me-txt { /*Paragraph containing about me text*/
   font-family: var(--secondary-font);
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5;
 }
+
 /*Contact Page*/
 #contact-main-section {
   display: flex;
@@ -214,6 +202,7 @@ main ul li + li:before {
   width: 90%;
   height: 90%;
 }
+/*Graphical component styling*/
 #contact-details {
   border: solid 1px black;
   background: var(--primary-grey);
@@ -236,11 +225,6 @@ main ul li + li:before {
     background: var(--primary-grey);
   }
 }
-#contact-form {
-  border: solid 1px black;
-  width: 100%;
-  height: 55%;
-}
 #contact-main-heading {
   font-family: var(--secondary-font);
   text-align: left;
@@ -259,15 +243,19 @@ main ul li + li:before {
   color: #000;
   margin-left: 1rem;
   margin-bottom: 0.25rem;
-  
-}
+  }
 #contact-details p {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
   color: #fff;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  
+  }
+/*Text component styling*/
+#contact-form {
+  border: solid 1px black;
+  width: 100%;
+  height: 55%;
 }
 #form-sub-heading{
   color: #000;
@@ -301,7 +289,7 @@ form{
   }
 
 /*Footer - All Pages*/
-/*Text component 3*/
+/*Text component styling*/
 footer {
   display: flex;
   width: 100%;
@@ -313,8 +301,7 @@ footer {
   bottom: 0;
   background: var(--primary-blue);
 }
-footer img {
-  /*Container for github icon*/
+footer img {/*Container for github icon*/
   width: 5rem;
   height: 5rem;
   margin: 2rem;
@@ -323,8 +310,7 @@ footer img {
   border: 2px solid #000;
   border-radius: 25%;
 }
-footer p {
-  /*Copyright text*/
+footer p {  /*Copyright text*/
   font-family: var(--secondary-font);
   font-size: 1.25rem;
   margin: 2rem;
